@@ -1,0 +1,15 @@
+[versions]
+koin = "4.2.0"
+kotlin = "2.3.20"
+ktor = "3.4.1"
+logback = "1.5.21"
+
+[libraries]
+insert-koin-koinKtor = { module = "io.insert-koin:koin-ktor", version.ref = "koin" }
+insert-koin-koinLoggerSlf4j = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koin" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }

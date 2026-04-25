@@ -1,0 +1,8 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.premierdarkcoffee.tourism.SerializationKt.configureSerialization
+      - com.premierdarkcoffee.tourism.KoinKt.configureKoin
+      - com.premierdarkcoffee.tourism.RoutingKt.configureRouting
