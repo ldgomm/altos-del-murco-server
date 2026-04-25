@@ -1,10 +1,28 @@
-FROM gradle:7-jdk11 AS build
-COPY --chown=gradle:gradle . /home/gradle/src
-WORKDIR /home/gradle/src
-RUN gradle buildFatJar --no-daemon
+# syntax=docker/dockerfile:1
 
-FROM openjdk:11
-EXPOSE 8080:8080
-RUN mkdir /app
-COPY --from=build /home/gradle/src/build/libs/*.jar /app/ktor-docker-sample.jar
-ENTRYPOINT ["java","-jar","/app/ktor-docker-sample.jar"]
+FROM eclipse-temurin:21-jdk-jammy AS build
+
+WORKDIR /app
+
+COPY gradlew gradlew
+COPY gradle gradle
+COPY settings.gradle.kts settings.gradle.kts
+COPY build.gradle.kts build.gradle.kts
+COPY gradle.properties gradle.properties
+
+RUN chmod +x ./gradlew
+
+COPY src src
+
+RUN ./gradlew clean installDist --no-daemon
+
+
+FROM eclipse-temurin:21-jre-jammy
+
+WORKDIR /app
+
+COPY --from=build /app/build/install/altos-server ./
+
+EXPOSE 8080
+
+CMD ["./bin/altos-server"]

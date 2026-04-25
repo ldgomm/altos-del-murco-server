@@ -1,17 +1,21 @@
 :root {
     color-scheme: dark;
-    --bg: #11140f;
-    --bg-2: #171b14;
+    --bg: #101311;
+    --bg-2: #171c18;
     --surface: rgba(255, 255, 255, 0.075);
     --surface-strong: rgba(255, 255, 255, 0.12);
-    --text: #f5f2e8;
-    --muted: rgba(245, 242, 232, 0.72);
-    --soft: rgba(245, 242, 232, 0.52);
+    --text: #f5f7ef;
+    --muted: rgba(245, 247, 239, 0.72);
+    --soft: rgba(245, 247, 239, 0.52);
     --line: rgba(255, 255, 255, 0.14);
-    --gold: #f2c66d;
-    --orange: #df7b4f;
-    --green: #8ed66f;
-    --green-deep: #2e5c3e;
+    --gold: #e6c56c;
+    --restaurant: #3a3d3b;
+    --restaurant-light: #6f7470;
+    --restaurant-deep: #1d201f;
+    --green: #82d66f;
+    --green-soft: #b7e89b;
+    --green-deep: #28573a;
+    --green-forest: #143821;
     --red: #f87171;
     --shadow: rgba(0, 0, 0, 0.35);
     --radius-lg: 34px;
@@ -34,9 +38,9 @@ body {
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
     color: var(--text);
     background:
-        radial-gradient(circle at 15% 10%, rgba(142, 214, 111, 0.18), transparent 30rem),
-        radial-gradient(circle at 85% 0%, rgba(223, 123, 79, 0.18), transparent 28rem),
-        linear-gradient(145deg, #0d100c 0%, #151911 42%, #10130e 100%);
+        radial-gradient(circle at 15% 10%, rgba(130, 214, 111, 0.18), transparent 30rem),
+        radial-gradient(circle at 86% 4%, rgba(111, 116, 112, 0.20), transparent 28rem),
+        linear-gradient(145deg, #0b0f0c 0%, #151a16 42%, #101311 100%);
     overflow-x: hidden;
 }
 
@@ -79,7 +83,7 @@ svg {
 .ambient-two {
     right: -15vw;
     bottom: 0;
-    background: var(--orange);
+    background: var(--restaurant-light);
     animation-delay: -5s;
 }
 
@@ -240,9 +244,9 @@ svg {
 }
 
 .eyebrow.warm {
-    color: var(--orange);
-    border-color: rgba(223, 123, 79, 0.28);
-    background: rgba(223, 123, 79, 0.08);
+    color: #d8ddd7;
+    border-color: rgba(158, 166, 160, 0.34);
+    background: rgba(111, 116, 112, 0.16);
 }
 
 .pulse-dot {
@@ -311,9 +315,9 @@ p {
 }
 
 .button.primary {
-    color: #12120c;
-    background: linear-gradient(135deg, var(--gold), var(--green));
-    box-shadow: 0 20px 48px rgba(142, 214, 111, 0.18);
+    color: #101510;
+    background: linear-gradient(135deg, var(--green-soft), var(--green));
+    box-shadow: 0 20px 48px rgba(130, 214, 111, 0.20);
 }
 
 .button.ghost {
@@ -372,8 +376,8 @@ p {
     width: 42px;
     height: 42px;
     border-radius: 16px;
-    color: #13150f;
-    background: linear-gradient(135deg, var(--gold), var(--green));
+    color: #101510;
+    background: linear-gradient(135deg, var(--green-soft), var(--green));
     font-size: 1.35rem;
     font-weight: 1000;
     line-height: 1;
@@ -495,8 +499,8 @@ p {
     padding: 20px;
     border-radius: 30px;
     background:
-        radial-gradient(circle at 75% 25%, rgba(242,198,109,0.46), transparent 38%),
-        linear-gradient(135deg, rgba(46, 92, 62, 0.9), rgba(223,123,79,0.78));
+        radial-gradient(circle at 74% 22%, rgba(183,232,155,0.34), transparent 38%),
+        linear-gradient(135deg, rgba(31, 72, 45, 0.94), rgba(42, 88, 58, 0.86));
 }
 
 .phone-hero span,
@@ -537,7 +541,9 @@ p {
 }
 
 .app-pill.orange {
-    color: var(--gold);
+    color: #d8ddd7;
+    background: linear-gradient(180deg, rgba(111,116,112,0.24), rgba(255,255,255,0.06));
+    border-color: rgba(158,166,160,0.22);
 }
 
 .app-grid {
@@ -715,7 +721,7 @@ p {
 .dish-card:hover,
 .timeline-item:hover {
     transform: translateY(-8px);
-    border-color: rgba(242,198,109,0.34);
+    border-color: rgba(130,214,111,0.34);
 }
 
 .service-card::before,
@@ -731,7 +737,7 @@ p {
 }
 
 .restaurant-card::before {
-    background: var(--orange);
+    background: var(--restaurant-light);
 }
 
 .adventure-card::before {
@@ -740,6 +746,25 @@ p {
 
 .booking-card::before {
     background: var(--gold);
+}
+
+.restaurant-card,
+.dish-card {
+    background:
+        radial-gradient(circle at 86% 10%, rgba(111,116,112,0.20), transparent 22rem),
+        linear-gradient(180deg, rgba(255,255,255,0.092), rgba(32,35,34,0.54));
+}
+
+.restaurant-card .service-icon,
+.dish-card span {
+    color: #d8ddd7;
+}
+
+.adventure-card,
+.activity-card {
+    background:
+        radial-gradient(circle at 86% 8%, rgba(130,214,111,0.18), transparent 22rem),
+        linear-gradient(180deg, rgba(255,255,255,0.096), rgba(23,54,34,0.38));
 }
 
 .service-icon,
@@ -819,21 +844,21 @@ p {
 
 .dish-media.fire {
     background:
-        radial-gradient(circle at 30% 25%, rgba(242,198,109,0.9), transparent 16%),
-        radial-gradient(circle at 75% 15%, rgba(223,123,79,0.85), transparent 24%),
-        linear-gradient(145deg, #392016, #8b3d26, #1f2c19);
+        radial-gradient(circle at 30% 24%, rgba(230,197,108,0.74), transparent 16%),
+        radial-gradient(circle at 76% 16%, rgba(216,221,215,0.30), transparent 24%),
+        linear-gradient(145deg, #151817, #3a3d3b, #202423);
 }
 
 .dish-media.soup {
     background:
-        radial-gradient(circle at 52% 50%, rgba(242,198,109,0.8), transparent 22%),
-        linear-gradient(145deg, #5b2b19, #a65c31, #1c2418);
+        radial-gradient(circle at 52% 50%, rgba(230,197,108,0.62), transparent 22%),
+        linear-gradient(145deg, #181b1a, #4b504c, #222625);
 }
 
 .dish-media.drink {
     background:
-        radial-gradient(circle at 44% 34%, rgba(142,214,111,0.75), transparent 22%),
-        linear-gradient(145deg, #233d24, #725a27, #182115);
+        radial-gradient(circle at 44% 34%, rgba(130,214,111,0.58), transparent 22%),
+        linear-gradient(145deg, #161a18, #3e4540, #203026);
 }
 
 .dish-card span {
@@ -914,8 +939,8 @@ p {
     height: 46px;
     margin-bottom: 20px;
     border-radius: 16px;
-    color: #17120c;
-    background: linear-gradient(135deg, var(--gold), var(--green));
+    color: #101510;
+    background: linear-gradient(135deg, var(--green-soft), var(--green));
     font-weight: 1000;
 }
 
@@ -960,7 +985,7 @@ p {
 }
 
 .stacked-cards div:nth-child(1) { --rotate: -12deg; --offset: -96px; color: var(--gold); }
-.stacked-cards div:nth-child(2) { --rotate: -6deg; --offset: -48px; color: var(--orange); animation-delay: -.4s; }
+.stacked-cards div:nth-child(2) { --rotate: -6deg; --offset: -48px; color: #d8ddd7; animation-delay: -.4s; }
 .stacked-cards div:nth-child(3) { --rotate: 0deg; --offset: 0px; color: var(--green); animation-delay: -.8s; }
 .stacked-cards div:nth-child(4) { --rotate: 6deg; --offset: 48px; animation-delay: -1.2s; }
 .stacked-cards div:nth-child(5) { --rotate: 12deg; --offset: 96px; animation-delay: -1.6s; }
@@ -1059,6 +1084,48 @@ p {
     width: 38px;
     height: 38px;
     border-radius: 14px;
+}
+
+
+/* Brand theme refinement: restaurant = premium dark gray, adventure = nature green. */
+#restaurante .section-heading h2,
+.restaurant-card h3,
+.dish-card h3 {
+    color: #f4f6f1;
+}
+
+#restaurante .dish-card,
+.restaurant-card {
+    border-color: rgba(158,166,160,0.18);
+    box-shadow: 0 24px 70px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.11);
+}
+
+#experiencias .activity-card,
+.adventure-card {
+    border-color: rgba(130,214,111,0.18);
+    background:
+        radial-gradient(circle at 88% 6%, color-mix(in srgb, var(--accent, var(--green)), transparent 76%), transparent 20rem),
+        linear-gradient(180deg, rgba(255,255,255,0.092), rgba(20,56,33,0.36));
+}
+
+#experiencias .section-heading h2,
+.adventure-card h3 {
+    color: #efffee;
+}
+
+.nav-links .nav-cta,
+.brand-mark {
+    background: linear-gradient(135deg, var(--green-soft), var(--green));
+}
+
+.metrics article:first-child strong,
+#restaurante .dish-card span {
+    color: #d8ddd7;
+}
+
+.metrics article:nth-child(2) strong,
+#experiencias .activity-card strong {
+    color: var(--green);
 }
 
 .reveal {
@@ -1267,7 +1334,49 @@ p {
         transition-duration: .01ms !important;
     }
 
-    .reveal {
+    
+/* Brand theme refinement: restaurant = premium dark gray, adventure = nature green. */
+#restaurante .section-heading h2,
+.restaurant-card h3,
+.dish-card h3 {
+    color: #f4f6f1;
+}
+
+#restaurante .dish-card,
+.restaurant-card {
+    border-color: rgba(158,166,160,0.18);
+    box-shadow: 0 24px 70px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.11);
+}
+
+#experiencias .activity-card,
+.adventure-card {
+    border-color: rgba(130,214,111,0.18);
+    background:
+        radial-gradient(circle at 88% 6%, color-mix(in srgb, var(--accent, var(--green)), transparent 76%), transparent 20rem),
+        linear-gradient(180deg, rgba(255,255,255,0.092), rgba(20,56,33,0.36));
+}
+
+#experiencias .section-heading h2,
+.adventure-card h3 {
+    color: #efffee;
+}
+
+.nav-links .nav-cta,
+.brand-mark {
+    background: linear-gradient(135deg, var(--green-soft), var(--green));
+}
+
+.metrics article:first-child strong,
+#restaurante .dish-card span {
+    color: #d8ddd7;
+}
+
+.metrics article:nth-child(2) strong,
+#experiencias .activity-card strong {
+    color: var(--green);
+}
+
+.reveal {
         opacity: 1;
         transform: none;
     }
