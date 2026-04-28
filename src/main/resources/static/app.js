@@ -10,7 +10,7 @@
     };
 
     onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('scroll', onScroll, {passive: true});
 
     navToggle?.addEventListener('click', () => {
         body.classList.toggle('nav-open');
@@ -27,7 +27,7 @@
                 revealObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
 
     document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
 

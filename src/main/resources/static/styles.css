@@ -37,10 +37,9 @@ body {
     min-height: 100vh;
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
     color: var(--text);
-    background:
-        radial-gradient(circle at 15% 10%, rgba(130, 214, 111, 0.18), transparent 30rem),
-        radial-gradient(circle at 86% 4%, rgba(111, 116, 112, 0.20), transparent 28rem),
-        linear-gradient(145deg, #0b0f0c 0%, #151a16 42%, #101311 100%);
+    background: radial-gradient(circle at 15% 10%, rgba(130, 214, 111, 0.18), transparent 30rem),
+    radial-gradient(circle at 86% 4%, rgba(111, 116, 112, 0.20), transparent 28rem),
+    linear-gradient(145deg, #0b0f0c 0%, #151a16 42%, #101311 100%);
     overflow-x: hidden;
 }
 
@@ -93,9 +92,8 @@ svg {
     pointer-events: none;
     z-index: -2;
     opacity: 0.26;
-    background-image:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
     background-size: 42px 42px;
     mask-image: linear-gradient(to bottom, black, transparent 90%);
 }
@@ -141,7 +139,7 @@ svg {
     letter-spacing: -0.08em;
     color: #15120b;
     background: linear-gradient(135deg, var(--gold), var(--green));
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 12px 30px rgba(142,214,111,0.18);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 12px 30px rgba(142, 214, 111, 0.18);
 }
 
 .brand strong,
@@ -177,7 +175,7 @@ svg {
 
 .nav-links a:hover {
     color: var(--text);
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     transform: translateY(-1px);
 }
 
@@ -192,7 +190,7 @@ svg {
     height: 44px;
     border: 1px solid var(--line);
     border-radius: 16px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .nav-toggle span {
@@ -304,7 +302,7 @@ p {
     padding: 0 22px;
     overflow: hidden;
     border-radius: 999px;
-    border: 1px solid rgba(255,255,255,0.16);
+    border: 1px solid rgba(255, 255, 255, 0.16);
     font-weight: 900;
     transform-style: preserve-3d;
     transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
@@ -322,7 +320,7 @@ p {
 
 .button.ghost {
     color: var(--text);
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(16px);
 }
 
@@ -347,10 +345,10 @@ p {
     min-width: 188px;
     padding: 12px 16px;
     overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.16);
+    border: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: 22px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.055));
-    box-shadow: 0 16px 42px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.14);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.055));
+    box-shadow: 0 16px 42px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.14);
     backdrop-filter: blur(18px);
 }
 
@@ -367,8 +365,14 @@ p {
     animation: storeGlow 5s ease-in-out infinite alternate;
 }
 
-.store-badge.ios::before { background: var(--gold); }
-.store-badge.android::before { background: var(--green); animation-delay: -1.4s; }
+.store-badge.ios::before {
+    background: var(--gold);
+}
+
+.store-badge.android::before {
+    background: var(--green);
+    animation-delay: -1.4s;
+}
 
 .store-icon {
     display: grid;
@@ -422,8 +426,8 @@ p {
     padding: 34px;
     border-radius: var(--radius-lg);
     border: 1px solid var(--line);
-    background: linear-gradient(180deg, rgba(255,255,255,0.095), rgba(255,255,255,0.045));
-    box-shadow: 0 24px 70px rgba(0,0,0,0.26), inset 0 1px 0 rgba(255,255,255,0.13);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.045));
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.13);
     backdrop-filter: blur(22px) saturate(1.15);
 }
 
@@ -458,7 +462,7 @@ p {
     border: 1px solid var(--line);
     border-radius: 999px;
     color: var(--soft);
-    background: rgba(255,255,255,0.045);
+    background: rgba(255, 255, 255, 0.045);
     font-size: 0.84rem;
     font-weight: 800;
 }
@@ -475,13 +479,12 @@ p {
     width: min(365px, 82vw);
     min-height: 560px;
     padding: 18px;
-    border: 1px solid rgba(255,255,255,0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 42px;
-    background:
-        linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.06)),
-        rgba(17, 20, 15, 0.84);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.06)),
+    rgba(17, 20, 15, 0.84);
     backdrop-filter: blur(28px) saturate(1.3);
-    box-shadow: 0 35px 80px rgba(0,0,0,0.42), inset 0 1px 0 rgba(255,255,255,0.24);
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.24);
     transform: rotateX(8deg) rotateY(-12deg) rotateZ(3deg);
     animation: phoneFloat 7s ease-in-out infinite;
 }
@@ -491,16 +494,15 @@ p {
     height: 11px;
     margin: 0 auto 18px;
     border-radius: 999px;
-    background: rgba(255,255,255,0.16);
+    background: rgba(255, 255, 255, 0.16);
 }
 
 .phone-hero {
     min-height: 158px;
     padding: 20px;
     border-radius: 30px;
-    background:
-        radial-gradient(circle at 74% 22%, rgba(183,232,155,0.34), transparent 38%),
-        linear-gradient(135deg, rgba(31, 72, 45, 0.94), rgba(42, 88, 58, 0.86));
+    background: radial-gradient(circle at 74% 22%, rgba(183, 232, 155, 0.34), transparent 38%),
+    linear-gradient(135deg, rgba(31, 72, 45, 0.94), rgba(42, 88, 58, 0.86));
 }
 
 .phone-hero span,
@@ -509,7 +511,7 @@ p {
 }
 
 .phone-hero span {
-    color: rgba(255,255,255,0.76);
+    color: rgba(255, 255, 255, 0.76);
     font-size: 0.82rem;
     font-weight: 800;
 }
@@ -525,8 +527,8 @@ p {
 .app-pill,
 .app-grid span,
 .phone-total {
-    border: 1px solid rgba(255,255,255,0.13);
-    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .app-pill {
@@ -542,8 +544,8 @@ p {
 
 .app-pill.orange {
     color: #d8ddd7;
-    background: linear-gradient(180deg, rgba(111,116,112,0.24), rgba(255,255,255,0.06));
-    border-color: rgba(158,166,160,0.22);
+    background: linear-gradient(180deg, rgba(111, 116, 112, 0.24), rgba(255, 255, 255, 0.06));
+    border-color: rgba(158, 166, 160, 0.22);
 }
 
 .app-grid {
@@ -583,7 +585,7 @@ p {
 
 .orbit {
     position: absolute;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 999px;
     animation: rotate 24s linear infinite;
 }
@@ -603,11 +605,11 @@ p {
     place-items: center;
     width: 70px;
     height: 70px;
-    border: 1px solid rgba(255,255,255,0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 24px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(18px);
-    box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
     font-weight: 1000;
     animation: floatBadge 5.4s ease-in-out infinite;
 }
@@ -649,8 +651,8 @@ p {
 .legal-content,
 .legal-hero {
     border: 1px solid var(--line);
-    background: linear-gradient(180deg, rgba(255,255,255,0.095), rgba(255,255,255,0.045));
-    box-shadow: 0 24px 70px rgba(0,0,0,0.26), inset 0 1px 0 rgba(255,255,255,0.13);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.045));
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.13);
     backdrop-filter: blur(22px) saturate(1.15);
 }
 
@@ -721,7 +723,7 @@ p {
 .dish-card:hover,
 .timeline-item:hover {
     transform: translateY(-8px);
-    border-color: rgba(130,214,111,0.34);
+    border-color: rgba(130, 214, 111, 0.34);
 }
 
 .service-card::before,
@@ -750,9 +752,8 @@ p {
 
 .restaurant-card,
 .dish-card {
-    background:
-        radial-gradient(circle at 86% 10%, rgba(111,116,112,0.20), transparent 22rem),
-        linear-gradient(180deg, rgba(255,255,255,0.092), rgba(32,35,34,0.54));
+    background: radial-gradient(circle at 86% 10%, rgba(111, 116, 112, 0.20), transparent 22rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.092), rgba(32, 35, 34, 0.54));
 }
 
 .restaurant-card .service-icon,
@@ -762,9 +763,8 @@ p {
 
 .adventure-card,
 .activity-card {
-    background:
-        radial-gradient(circle at 86% 8%, rgba(130,214,111,0.18), transparent 22rem),
-        linear-gradient(180deg, rgba(255,255,255,0.096), rgba(23,54,34,0.38));
+    background: radial-gradient(circle at 86% 8%, rgba(130, 214, 111, 0.18), transparent 22rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.096), rgba(23, 54, 34, 0.38));
 }
 
 .service-icon,
@@ -774,9 +774,9 @@ p {
     width: 64px;
     height: 64px;
     margin-bottom: 22px;
-    border: 1px solid rgba(255,255,255,0.16);
+    border: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: 24px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     font-size: 1.75rem;
 }
 
@@ -843,22 +843,19 @@ p {
 }
 
 .dish-media.fire {
-    background:
-        radial-gradient(circle at 30% 24%, rgba(230,197,108,0.74), transparent 16%),
-        radial-gradient(circle at 76% 16%, rgba(216,221,215,0.30), transparent 24%),
-        linear-gradient(145deg, #151817, #3a3d3b, #202423);
+    background: radial-gradient(circle at 30% 24%, rgba(230, 197, 108, 0.74), transparent 16%),
+    radial-gradient(circle at 76% 16%, rgba(216, 221, 215, 0.30), transparent 24%),
+    linear-gradient(145deg, #151817, #3a3d3b, #202423);
 }
 
 .dish-media.soup {
-    background:
-        radial-gradient(circle at 52% 50%, rgba(230,197,108,0.62), transparent 22%),
-        linear-gradient(145deg, #181b1a, #4b504c, #222625);
+    background: radial-gradient(circle at 52% 50%, rgba(230, 197, 108, 0.62), transparent 22%),
+    linear-gradient(145deg, #181b1a, #4b504c, #222625);
 }
 
 .dish-media.drink {
-    background:
-        radial-gradient(circle at 44% 34%, rgba(130,214,111,0.58), transparent 22%),
-        linear-gradient(145deg, #161a18, #3e4540, #203026);
+    background: radial-gradient(circle at 44% 34%, rgba(130, 214, 111, 0.58), transparent 22%),
+    linear-gradient(145deg, #161a18, #3e4540, #203026);
 }
 
 .dish-card span {
@@ -881,11 +878,10 @@ p {
     position: relative;
     min-height: 265px;
     padding: 24px;
-    border: 1px solid rgba(255,255,255,0.14);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    background:
-        linear-gradient(180deg, rgba(255,255,255,0.096), rgba(255,255,255,0.045));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.096), rgba(255, 255, 255, 0.045));
     transition: transform .32s ease, border-color .32s ease;
 }
 
@@ -975,20 +971,46 @@ p {
     place-items: center;
     width: 250px;
     height: 76px;
-    border: 1px solid rgba(255,255,255,0.14);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 24px;
-    background: rgba(255,255,255,0.09);
-    box-shadow: 0 24px 52px rgba(0,0,0,0.22);
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 24px 52px rgba(0, 0, 0, 0.22);
     font-weight: 1000;
     transform: translate(-50%, -50%) rotate(var(--rotate)) translateY(var(--offset));
     animation: stackPulse 5s ease-in-out infinite alternate;
 }
 
-.stacked-cards div:nth-child(1) { --rotate: -12deg; --offset: -96px; color: var(--gold); }
-.stacked-cards div:nth-child(2) { --rotate: -6deg; --offset: -48px; color: #d8ddd7; animation-delay: -.4s; }
-.stacked-cards div:nth-child(3) { --rotate: 0deg; --offset: 0px; color: var(--green); animation-delay: -.8s; }
-.stacked-cards div:nth-child(4) { --rotate: 6deg; --offset: 48px; animation-delay: -1.2s; }
-.stacked-cards div:nth-child(5) { --rotate: 12deg; --offset: 96px; animation-delay: -1.6s; }
+.stacked-cards div:nth-child(1) {
+    --rotate: -12deg;
+    --offset: -96px;
+    color: var(--gold);
+}
+
+.stacked-cards div:nth-child(2) {
+    --rotate: -6deg;
+    --offset: -48px;
+    color: #d8ddd7;
+    animation-delay: -.4s;
+}
+
+.stacked-cards div:nth-child(3) {
+    --rotate: 0deg;
+    --offset: 0px;
+    color: var(--green);
+    animation-delay: -.8s;
+}
+
+.stacked-cards div:nth-child(4) {
+    --rotate: 6deg;
+    --offset: 48px;
+    animation-delay: -1.2s;
+}
+
+.stacked-cards div:nth-child(5) {
+    --rotate: 12deg;
+    --offset: 96px;
+    animation-delay: -1.6s;
+}
 
 .legal-main {
     padding-top: 58px;
@@ -1047,7 +1069,7 @@ p {
     padding: 26px;
     border: 1px solid var(--line);
     border-radius: 30px;
-    background: rgba(255,255,255,0.055);
+    background: rgba(255, 255, 255, 0.055);
     backdrop-filter: blur(18px);
 }
 
@@ -1077,7 +1099,7 @@ p {
 
 .site-footer nav a:hover {
     color: var(--text);
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .footer-brand .brand-mark {
@@ -1096,16 +1118,15 @@ p {
 
 #restaurante .dish-card,
 .restaurant-card {
-    border-color: rgba(158,166,160,0.18);
-    box-shadow: 0 24px 70px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.11);
+    border-color: rgba(158, 166, 160, 0.18);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.30), inset 0 1px 0 rgba(255, 255, 255, 0.11);
 }
 
 #experiencias .activity-card,
 .adventure-card {
-    border-color: rgba(130,214,111,0.18);
-    background:
-        radial-gradient(circle at 88% 6%, color-mix(in srgb, var(--accent, var(--green)), transparent 76%), transparent 20rem),
-        linear-gradient(180deg, rgba(255,255,255,0.092), rgba(20,56,33,0.36));
+    border-color: rgba(130, 214, 111, 0.18);
+    background: radial-gradient(circle at 88% 6%, color-mix(in srgb, var(--accent, var(--green)), transparent 76%), transparent 20rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.092), rgba(20, 56, 33, 0.36));
 }
 
 #experiencias .section-heading h2,
@@ -1131,7 +1152,7 @@ p {
 .reveal {
     opacity: 0;
     transform: translateY(24px) scale(.985);
-    transition: opacity .85s cubic-bezier(.2,.8,.2,1), transform .85s cubic-bezier(.2,.8,.2,1);
+    transition: opacity .85s cubic-bezier(.2, .8, .2, 1), transform .85s cubic-bezier(.2, .8, .2, 1);
 }
 
 .reveal.is-visible {
@@ -1139,43 +1160,74 @@ p {
     transform: translateY(0) scale(1);
 }
 
-.delay-1 { transition-delay: .12s; }
-.delay-2 { transition-delay: .22s; }
-.delay-3 { transition-delay: .32s; }
+.delay-1 {
+    transition-delay: .12s;
+}
+
+.delay-2 {
+    transition-delay: .22s;
+}
+
+.delay-3 {
+    transition-delay: .32s;
+}
 
 @keyframes floatAmbient {
-    to { transform: translate3d(8vw, 5vh, 0) scale(1.12); }
+    to {
+        transform: translate3d(8vw, 5vh, 0) scale(1.12);
+    }
 }
 
 @keyframes pulse {
-    70% { box-shadow: 0 0 0 10px rgba(142, 214, 111, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(142, 214, 111, 0); }
+    70% {
+        box-shadow: 0 0 0 10px rgba(142, 214, 111, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(142, 214, 111, 0);
+    }
 }
 
 @keyframes phoneFloat {
-    0%, 100% { transform: rotateX(8deg) rotateY(-12deg) rotateZ(3deg) translateY(0); }
-    50% { transform: rotateX(10deg) rotateY(-8deg) rotateZ(1deg) translateY(-18px); }
+    0%, 100% {
+        transform: rotateX(8deg) rotateY(-12deg) rotateZ(3deg) translateY(0);
+    }
+    50% {
+        transform: rotateX(10deg) rotateY(-8deg) rotateZ(1deg) translateY(-18px);
+    }
 }
 
 @keyframes rotate {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes floatBadge {
-    0%, 100% { transform: translateY(0) rotate(-2deg); }
-    50% { transform: translateY(-16px) rotate(5deg); }
+    0%, 100% {
+        transform: translateY(0) rotate(-2deg);
+    }
+    50% {
+        transform: translateY(-16px) rotate(5deg);
+    }
 }
 
 @keyframes gradientMove {
-    to { background-position: 100% 100%; }
+    to {
+        background-position: 100% 100%;
+    }
 }
 
 @keyframes stackPulse {
-    to { filter: brightness(1.16); }
+    to {
+        filter: brightness(1.16);
+    }
 }
 
 @keyframes storeGlow {
-    to { transform: translate3d(-18px, 18px, 0) scale(1.14); opacity: .34; }
+    to {
+        transform: translate3d(-18px, 18px, 0) scale(1.14);
+        opacity: .34;
+    }
 }
 
 @media (max-width: 980px) {
@@ -1249,7 +1301,7 @@ p {
         padding: 14px;
         border: 1px solid var(--line);
         border-radius: 26px;
-        background: rgba(17,20,15,0.96);
+        background: rgba(17, 20, 15, 0.96);
         backdrop-filter: blur(24px);
         transform: translateY(-10px) scale(.98);
         opacity: 0;
@@ -1263,9 +1315,17 @@ p {
         pointer-events: auto;
     }
 
-    body.nav-open .nav-toggle span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-    body.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
-    body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+    body.nav-open .nav-toggle span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    body.nav-open .nav-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    body.nav-open .nav-toggle span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
 
     .hero h1,
     .legal-hero h1 {
@@ -1334,50 +1394,261 @@ p {
         transition-duration: .01ms !important;
     }
 
-    
-/* Brand theme refinement: restaurant = premium dark gray, adventure = nature green. */
-#restaurante .section-heading h2,
-.restaurant-card h3,
-.dish-card h3 {
-    color: #f4f6f1;
-}
 
-#restaurante .dish-card,
-.restaurant-card {
-    border-color: rgba(158,166,160,0.18);
-    box-shadow: 0 24px 70px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.11);
-}
+    /* Brand theme refinement: restaurant = premium dark gray, adventure = nature green. */
+    #restaurante .section-heading h2,
+    .restaurant-card h3,
+    .dish-card h3 {
+        color: #f4f6f1;
+    }
 
-#experiencias .activity-card,
-.adventure-card {
-    border-color: rgba(130,214,111,0.18);
-    background:
-        radial-gradient(circle at 88% 6%, color-mix(in srgb, var(--accent, var(--green)), transparent 76%), transparent 20rem),
-        linear-gradient(180deg, rgba(255,255,255,0.092), rgba(20,56,33,0.36));
-}
+    #restaurante .dish-card,
+    .restaurant-card {
+        border-color: rgba(158, 166, 160, 0.18);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.30), inset 0 1px 0 rgba(255, 255, 255, 0.11);
+    }
 
-#experiencias .section-heading h2,
-.adventure-card h3 {
-    color: #efffee;
-}
+    #experiencias .activity-card,
+    .adventure-card {
+        border-color: rgba(130, 214, 111, 0.18);
+        background: radial-gradient(circle at 88% 6%, color-mix(in srgb, var(--accent, var(--green)), transparent 76%), transparent 20rem),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.092), rgba(20, 56, 33, 0.36));
+    }
 
-.nav-links .nav-cta,
-.brand-mark {
-    background: linear-gradient(135deg, var(--green-soft), var(--green));
-}
+    #experiencias .section-heading h2,
+    .adventure-card h3 {
+        color: #efffee;
+    }
 
-.metrics article:first-child strong,
-#restaurante .dish-card span {
-    color: #d8ddd7;
-}
+    .nav-links .nav-cta,
+    .brand-mark {
+        background: linear-gradient(135deg, var(--green-soft), var(--green));
+    }
 
-.metrics article:nth-child(2) strong,
-#experiencias .activity-card strong {
-    color: var(--green);
-}
+    .metrics article:first-child strong,
+    #restaurante .dish-card span {
+        color: #d8ddd7;
+    }
 
-.reveal {
+    .metrics article:nth-child(2) strong,
+    #experiencias .activity-card strong {
+        color: var(--green);
+    }
+
+    .reveal {
         opacity: 1;
         transform: none;
+    }
+}
+
+/* Enterprise legal, support and App Store URL sections */
+.legal-highlights,
+.support-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 26px;
+}
+
+.legal-highlights span {
+    padding: 10px 14px;
+    border: 1px solid rgba(130, 214, 111, 0.24);
+    border-radius: 999px;
+    color: var(--green-soft);
+    background: rgba(130, 214, 111, 0.08);
+    font-size: .84rem;
+    font-weight: 900;
+}
+
+.url-panel {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(360px, 1.1fr);
+    gap: 26px;
+    align-items: stretch;
+    margin-bottom: 88px;
+    padding: 34px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--line);
+    background: radial-gradient(circle at 92% 4%, rgba(130, 214, 111, .18), transparent 22rem),
+    linear-gradient(180deg, rgba(255, 255, 255, .095), rgba(255, 255, 255, .045));
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .26), inset 0 1px 0 rgba(255, 255, 255, .13);
+    backdrop-filter: blur(22px) saturate(1.15);
+}
+
+.url-panel h2 {
+    margin-bottom: 16px;
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: .98;
+    letter-spacing: -.065em;
+}
+
+.url-panel p {
+    color: var(--muted);
+    line-height: 1.75;
+    font-size: 1.02rem;
+}
+
+.url-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.compact-url-grid {
+    grid-template-columns: 1fr;
+}
+
+.url-card,
+.support-card,
+.principle-grid div {
+    border: 1px solid rgba(255, 255, 255, .14);
+    background: linear-gradient(180deg, rgba(255, 255, 255, .09), rgba(255, 255, 255, .045));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12);
+    backdrop-filter: blur(18px);
+}
+
+.url-card {
+    display: flex;
+    min-height: 210px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 22px;
+    border-radius: 26px;
+    transition: transform .28s ease, border-color .28s ease, background .28s ease;
+    overflow-wrap: anywhere;
+}
+
+.url-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(130, 214, 111, .34);
+    background: linear-gradient(180deg, rgba(130, 214, 111, .12), rgba(255, 255, 255, .055));
+}
+
+.url-card span {
+    width: max-content;
+    padding: 8px 10px;
+    border-radius: 999px;
+    color: var(--green-soft);
+    background: rgba(130, 214, 111, .10);
+    font-size: .74rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+}
+
+.url-card strong {
+    display: block;
+    color: var(--text);
+    font-size: 1.05rem;
+    line-height: 1.35;
+}
+
+.url-card p {
+    font-size: .94rem;
+    color: var(--soft);
+}
+
+.support-grid,
+.principle-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.support-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-bottom: 88px;
+}
+
+.support-card {
+    min-height: 260px;
+    padding: 24px;
+    border-radius: var(--radius-lg);
+    transition: transform .32s ease, border-color .32s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(130, 214, 111, .34);
+}
+
+.support-card span {
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 18px;
+    border-radius: 22px;
+    background: rgba(130, 214, 111, .10);
+    border: 1px solid rgba(130, 214, 111, .20);
+    font-size: 1.55rem;
+}
+
+.support-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    letter-spacing: -.035em;
+}
+
+.support-card p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.privacy-principles {
+    border-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.principle-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 20px;
+}
+
+.principle-grid div {
+    padding: 18px;
+    border-radius: 20px;
+}
+
+.principle-grid strong,
+.principle-grid span {
+    display: block;
+}
+
+.principle-grid strong {
+    margin-bottom: 8px;
+    color: var(--green-soft);
+}
+
+.principle-grid span {
+    color: var(--muted);
+    line-height: 1.55;
+    font-size: .92rem;
+}
+
+.support-hero {
+    background: radial-gradient(circle at 86% 8%, rgba(130, 214, 111, .18), transparent 24rem),
+    linear-gradient(180deg, rgba(255, 255, 255, .095), rgba(255, 255, 255, .045));
+}
+
+@media (max-width: 980px) {
+    .url-panel,
+    .url-grid,
+    .support-grid,
+    .principle-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .url-panel,
+    .url-grid,
+    .support-grid,
+    .principle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .support-actions .button {
+        width: 100%;
     }
 }

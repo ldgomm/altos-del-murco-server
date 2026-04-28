@@ -19,6 +19,7 @@ fun Application.configureRouting() {
         htmlPage("/about", "static/about.html", appClassLoader)
         htmlPage("/privacy", "static/privacy.html", appClassLoader)
         htmlPage("/privacy-policy", "static/privacy.html", appClassLoader)
+        htmlPage("/support", "static/support.html", appClassLoader)
         htmlPage("/terms", "static/terms.html", appClassLoader)
         htmlPage("/terms-and-conditions", "static/terms.html", appClassLoader)
 
