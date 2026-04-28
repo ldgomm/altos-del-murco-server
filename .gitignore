@@ -11,3 +11,5 @@ local.properties
 .DS_Store
 logs/
 *.log
+export_swift_to_md.sh
+project_swift_files.md
